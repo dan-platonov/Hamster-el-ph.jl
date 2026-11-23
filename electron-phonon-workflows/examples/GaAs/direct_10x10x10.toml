@@ -1,0 +1,20 @@
+# Text configuration for the existing direct Fourier d accumulator.
+# Prepare covariance and equilibrium POSCARs first; see docs/RUNNING.md section 5.
+# calc_dir, data_dir and trajectory are relative to THIS TOML file (absolute paths work too).
+# If you copy this configuration elsewhere, update the paths before running.
+calc_dir = "TB_only/10x10x10/100K"
+data_dir = "../../data/GaAs/TB_only/10x10x10/100K"
+trajectory = "../../data/GaAs/TB_only/10x10x10/100K/SC_XDATCAR"
+# Model-file names below are relative to calc_dir; add ml_params.dat for ML,
+# plus all other files required by the chosen hconf/model.
+model_files = ["rllm.dat", "params.dat", "SC_POSCAR", "EIGENVAL"]
+start_snapshot = 500
+final_snapshot = "all"
+skip_snapshots = 0
+hamster_chunk_size = 20
+accumulation_window = 60
+convergence_m = 1
+fft_threads = 1
+# Keep primary pair d files; export combined d later for the postprocessors.
+# Selecting full g or initial-k=Gamma g happens in postprocessing, not here.
+assemble_final_output = false

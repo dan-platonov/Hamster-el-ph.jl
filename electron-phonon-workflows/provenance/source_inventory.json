@@ -1,0 +1,303 @@
+[
+  {
+    "source": "generalized/ElectronPhononCouplingTools.jl",
+    "destination": "common/ElectronPhononCouplingTools.jl",
+    "source_sha256": "ebe111571c1a55084a0c806fa959b21d6657397dd843c5ed6319fde0b17db5a4",
+    "collected_sha256": "ebe111571c1a55084a0c806fa959b21d6657397dd843c5ed6319fde0b17db5a4",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/HamsterHrLoader.jl",
+    "destination": "common/HamsterHrLoader.jl",
+    "source_sha256": "963e2844f03622c75e1446e2ad8a0e54e7487dcb43c43d4665804d3d37477c5d",
+    "collected_sha256": "963e2844f03622c75e1446e2ad8a0e54e7487dcb43c43d4665804d3d37477c5d",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/PrimitiveBasisRelabel.jl",
+    "destination": "common/PrimitiveBasisRelabel.jl",
+    "source_sha256": "2fad4090ef595fb2d41bd9c955099fa6f1b7004f625564822897ba0ac747b4a0",
+    "collected_sha256": "2fad4090ef595fb2d41bd9c955099fa6f1b7004f625564822897ba0ac747b4a0",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/VaspTrajectoryStatistics.jl",
+    "destination": "common/VaspTrajectoryStatistics.jl",
+    "source_sha256": "a025ab5f6f2730de2d7da83e3fc21b2c15cf9b8806fae0389b60c66cd235dde4",
+    "collected_sha256": "a025ab5f6f2730de2d7da83e3fc21b2c15cf9b8806fae0389b60c66cd235dde4",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/AccumulationCore.jl",
+    "destination": "workflows/full_tensor/AccumulationCore.jl",
+    "source_sha256": "9a1fd50a4572d91e2feed64b7d7120c3654af2703eb37662b67b90bb6575f7d7",
+    "collected_sha256": "11422c405386cffe4ffad057ea6165a8cce86cbf7c6c50c66de490d9c1ef1354",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/AccumulationCore_serial.jl",
+    "destination": "workflows/full_tensor/AccumulationCore_serial.jl",
+    "source_sha256": "36c5a9426df407444b414bd5c33e49b5605c76d8ea5c1e55815bc1c12773b7e9",
+    "collected_sha256": "a9fa5e8918ab44921423bd205873ae8658c1ad0afdd8f6de012230b8022a64ce",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/DistributedCorrelations.jl",
+    "destination": "workflows/full_tensor/DistributedCorrelations.jl",
+    "source_sha256": "9ce462b68c7165db3133083f46bb3d39ce261cb7c91b5d5aee131f20a2bbff68",
+    "collected_sha256": "9ce462b68c7165db3133083f46bb3d39ce261cb7c91b5d5aee131f20a2bbff68",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/accumulate_uH_parallel.jl",
+    "destination": "workflows/full_tensor/accumulate_uH_parallel.jl",
+    "source_sha256": "a951880bd238ab6cd341f886a03a1d651f6f0ca7f4b28c1714e424d5ee038eb5",
+    "collected_sha256": "d4b2c3092193fffd9b8c1b3aae612b303586ce3a8e50cbbd529ac06af9e91813",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/compute_d_from_accumulated_streaming.jl",
+    "destination": "workflows/full_tensor/compute_d_from_accumulated_streaming.jl",
+    "source_sha256": "59585f9aa7f5e0beee54732fd6219bad313f5c79f655c4a23cabfb4bff48f228",
+    "collected_sha256": "1bfe7287169b240fbda604c0570a79c9c6d04fe2898fb79cee99998bc29ca8c9",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/compute_equilibrium_covariance.jl",
+    "destination": "workflows/full_tensor/compute_equilibrium_covariance.jl",
+    "source_sha256": "2dc4e4239ba0f290d9f4709b5d3538894ccf29fd0afe67f23a7fed11ac752e29",
+    "collected_sha256": "b137e254a6cd407bae895a7ba326f17f4e068a3ca5974f4dd5600a1932dafcb0",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/compute_electron_phonon_g.jl",
+    "destination": "workflows/full_tensor/compute_electron_phonon_g.jl",
+    "source_sha256": "58ca7e592dfcaf1740d85aa1545c8a0e8548a4633f32bdc3f75ee7a349ed6b19",
+    "collected_sha256": "58ca7e592dfcaf1740d85aa1545c8a0e8548a4633f32bdc3f75ee7a349ed6b19",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/compute_phonons_from_covariance.jl",
+    "destination": "workflows/full_tensor/compute_phonons_from_covariance.jl",
+    "source_sha256": "c8c5122096d1bc94a6a0a537d3e425556ff2cf3012ec9ef2b9bb1c84272732a8",
+    "collected_sha256": "c8c5122096d1bc94a6a0a537d3e425556ff2cf3012ec9ef2b9bb1c84272732a8",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/unitary_transformation_matrix_construction.jl",
+    "destination": "workflows/full_tensor/unitary_transformation_matrix_construction.jl",
+    "source_sha256": "0b67c37e44ce897b3d2a5ef1df6d50f2c625a0334d20e01ee3de675497258efc",
+    "collected_sha256": "0b67c37e44ce897b3d2a5ef1df6d50f2c625a0334d20e01ee3de675497258efc",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/transform_electron_phonon_g_to_band_basis.jl",
+    "destination": "workflows/full_tensor/transform_electron_phonon_g_to_band_basis.jl",
+    "source_sha256": "337487b3987b195498746d6a85a609f181b8ed39f364df3ece91fb9e54a98601",
+    "collected_sha256": "337487b3987b195498746d6a85a609f181b8ed39f364df3ece91fb9e54a98601",
+    "adapted_from_source": false
+  },
+  {
+    "source": "generalized/MaceTrajectory.jl",
+    "destination": "workflows/full_tensor/MaceTrajectory.jl",
+    "source_sha256": "679476d1ec5b0b927f783aeab2af3dec9c9f21dae0bc039faf44748e9051a7e6",
+    "collected_sha256": "09370c907efefcd69c18447cbde7816bfe81346b788624b95a3faac397511895",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/run_stage.jl",
+    "destination": "workflows/full_tensor/run_stage.jl",
+    "source_sha256": "1dc43d8883e7a79d773f264424ee59e5886758e11da4e63a0c9656f434fc7822",
+    "collected_sha256": "1395a0a4c51b4b428bb71a5dd29d22ab9297c6ea173a629f82f31ae9ff8f789a",
+    "adapted_from_source": true
+  },
+  {
+    "source": "generalized/mpi_launch.jl",
+    "destination": "bin/mpi_launch.jl",
+    "source_sha256": "8a59b02594ddcc2057f0d1b67fa8d05d415ee6431f2238b06a4f63015ddd7f23",
+    "collected_sha256": "8a59b02594ddcc2057f0d1b67fa8d05d415ee6431f2238b06a4f63015ddd7f23",
+    "adapted_from_source": false
+  },
+  {
+    "source": "gaas_postprocessing/CalculationPaths.jl",
+    "destination": "postprocessing/CalculationPaths.jl",
+    "source_sha256": "9acbd8e2a77379170a8bdf483ea38683dcf64de3372c6d6dae4abcbca0727978",
+    "collected_sha256": "2e181c2fa7c81cf7ac53a5c1f74ec1a1e44f8baa0a984b9529b8b8adb7cedf2c",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_postprocessing/compute_electron_phonon_selected_k.jl",
+    "destination": "postprocessing/compute_electron_phonon_selected_k.jl",
+    "source_sha256": "475c4ebe00853ff74f6410922aaca97b3032b3cf2d34f31e69bf82f3809cfb3e",
+    "collected_sha256": "475c4ebe00853ff74f6410922aaca97b3032b3cf2d34f31e69bf82f3809cfb3e",
+    "adapted_from_source": false
+  },
+  {
+    "source": "gaas_postprocessing/compute_hamiltonian_at_average_positions.jl",
+    "destination": "postprocessing/compute_hamiltonian_at_average_positions.jl",
+    "source_sha256": "115a4cd430e31cdd1a9da5cb6ec919f11ccde305ed08fc4b9e0b397099076c2d",
+    "collected_sha256": "8d7826af38751a7547c4289bd9f9b7e2dc8d0feb507aecf29c9bcf03507087c3",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_postprocessing/unitary_transformation_matrix_construction.jl",
+    "destination": "postprocessing/unitary_transformation_matrix_construction.jl",
+    "source_sha256": "f7a5d7419ff8615ae8f39c2900740032c79fe7796f444476c566232bb0e8e29a",
+    "collected_sha256": "f7a5d7419ff8615ae8f39c2900740032c79fe7796f444476c566232bb0e8e29a",
+    "adapted_from_source": false
+  },
+  {
+    "source": "gaas_postprocessing/compute_electron_phonon_g.jl",
+    "destination": "postprocessing/compute_electron_phonon_g.jl",
+    "source_sha256": "5346aad8614650da67d6dbbc3d87242d18fbaff2b62f5361ba81a4ab5a7125bf",
+    "collected_sha256": "5346aad8614650da67d6dbbc3d87242d18fbaff2b62f5361ba81a4ab5a7125bf",
+    "adapted_from_source": false
+  },
+  {
+    "source": "gaas_postprocessing/transform_electron_phonon_g_to_band_basis.jl",
+    "destination": "postprocessing/transform_electron_phonon_g_to_band_basis.jl",
+    "source_sha256": "c15c594740e7caecb12d6207315e374e9a44e3575fa92bcb674430537a841de8",
+    "collected_sha256": "c15c594740e7caecb12d6207315e374e9a44e3575fa92bcb674430537a841de8",
+    "adapted_from_source": false
+  },
+  {
+    "source": "gaas_postprocessing/export_direct_pair_d.py",
+    "destination": "postprocessing/export_direct_pair_d.py",
+    "source_sha256": "4ec26f5047dfdd9a8a3351c3f67f4954aa8859651da01c80831e7ae04242ed31",
+    "collected_sha256": "4ec26f5047dfdd9a8a3351c3f67f4954aa8859651da01c80831e7ae04242ed31",
+    "adapted_from_source": false
+  },
+  {
+    "source": "large_cell/DirectFourierEph.jl",
+    "destination": "workflows/large_cell/DirectFourierEph.jl",
+    "source_sha256": "125770f99e344bd7a5d8f2f4b3595b4bf0f82c6a1679fd5448205182acc9c27f",
+    "collected_sha256": "125770f99e344bd7a5d8f2f4b3595b4bf0f82c6a1679fd5448205182acc9c27f",
+    "adapted_from_source": false
+  },
+  {
+    "source": "large_cell/DirectFourierKernel.jl",
+    "destination": "workflows/large_cell/DirectFourierKernel.jl",
+    "source_sha256": "ebb1aa70cb12dea3492a906c5c6469857cb0925479f844f1afe2dc9db5dc94d3",
+    "collected_sha256": "ebb1aa70cb12dea3492a906c5c6469857cb0925479f844f1afe2dc9db5dc94d3",
+    "adapted_from_source": false
+  },
+  {
+    "source": "large_cell/DirectDConvergence.jl",
+    "destination": "workflows/large_cell/DirectDConvergence.jl",
+    "source_sha256": "b9bc7b29f73dd6131a53bab2256de96b95ba75af86b783576cae6a32668fee7e",
+    "collected_sha256": "b9bc7b29f73dd6131a53bab2256de96b95ba75af86b783576cae6a32668fee7e",
+    "adapted_from_source": false
+  },
+  {
+    "source": "gaas_reference/accumulate_uH_chunked_with_convergence_final_v2.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/accumulate_uH_chunked_with_convergence_final_v2.jl",
+    "source_sha256": "92c38a93fbf7bc54f230c3d293ca4c5e66f8616a07594f135faaa3faf486af8e",
+    "collected_sha256": "1c3b72582b5b1b2fcf818345626d4f36e11fc29b210be65691dbcde6b6d8b15e",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_reference/compute_equilibrium_covariance.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/compute_equilibrium_covariance.jl",
+    "source_sha256": "2dba17d341bb1bf8b9f292d4ff9d90015fba1485ad3a6f04caffededebbc9989",
+    "collected_sha256": "92e0d333ae8faa72696d2f37515ab16c94c21d4f477cb4c0c3dc046614f0ac22",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_reference/compute_d_from_accumulated_streaming.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/compute_d_from_accumulated_streaming.jl",
+    "source_sha256": "f6477d5d69c8454873023d6ec408f78dac1efc8e49296612db6859c508c3b6c1",
+    "collected_sha256": "5615dff6eabade92198ed3f16f5e90dbc8cb1128ba932dde727504ffebd64d2e",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_reference/compute_electron_phonon_g.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/compute_electron_phonon_g.jl",
+    "source_sha256": "1cebb06178013bedbeddfd02c0817bdecad6b554a7426615cf1b7f63eb864648",
+    "collected_sha256": "4ffc01cf75a530c0050a6264d3b6787673179b29be0f7cc18b36ba239da04978",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_reference/compute_phonons_from_covariance.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/compute_phonons_from_covariance.jl",
+    "source_sha256": "5ee42f54542b94b60529d00172f7e62646cc155d398365cf260446b8fae7e17e",
+    "collected_sha256": "963a978ee648a8245e1616730bf6f6beb3ee266a044592c54cfde653494ea3f0",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_reference/unitary_transformation_matrix_construction.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/unitary_transformation_matrix_construction.jl",
+    "source_sha256": "71f74644edbc8eac1a835619d2521b3a947d4383381c431899e97126e91e5c6c",
+    "collected_sha256": "e120d39a72e383d5be9a3625aadaaf059cd391dbc05da4ab1af1f3741b83966d",
+    "adapted_from_source": true
+  },
+  {
+    "source": "gaas_reference/transform_electron_phonon_g_to_band_basis.jl",
+    "destination": "reference_original_implementation/gaas_4x4x4/transform_electron_phonon_g_to_band_basis.jl",
+    "source_sha256": "c3d84030622cacac2bd1dee1ccd1d839e708c0495882f478195a5ae22388537b",
+    "collected_sha256": "046cdc81812693974b9c8aaed49678f0d536f963f06a42f90ffcfa2877d60562",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_gaas/visualization_common.py",
+    "destination": "visualization/gaas/visualization_common.py",
+    "source_sha256": "9eca3f552fddde16113ec3bc4430d47729dc305f61e310a07a9b3b43dd411902",
+    "collected_sha256": "2f8da38d2984473776dbdee38ae9134865be02e97d78a2477c6665d839d5e55f",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_gaas/plot_species_orbital_d_heatmaps.py",
+    "destination": "visualization/gaas/plot_species_orbital_d_heatmaps.py",
+    "source_sha256": "0d71e1a49c0af907af58317268b5478728781aacfbc5a7c398eb4766e3787e82",
+    "collected_sha256": "2f89c9ae693d350882275a48733a15cf075c92939e831a3f55b987568a669262",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_gaas/plot_my_g2_gamma.py",
+    "destination": "visualization/gaas/plot_my_g2_gamma.py",
+    "source_sha256": "d19eb8d693354307611de1df34adad24254dcb518543059426f1e9c3d5a6f599",
+    "collected_sha256": "9fc4b43cbb1809275e0e79a0eea8725e88634fd370ec6858dd4e27e570b5ad8a",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_gaas/plot_g2_gamma_comparison_Perturbo.py",
+    "destination": "visualization/gaas/plot_g2_gamma_comparison_Perturbo.py",
+    "source_sha256": "71b33120df166743ec9817f94e4db35b13fa080854a5b77d10c32fe5b6dcc1b7",
+    "collected_sha256": "7701d00453199e452fa23f4ba98cc7eba0fd41d2f72eba297c4fa9c304a41e62",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_cspbbr3/visualization_common.py",
+    "destination": "visualization/cspbbr3/visualization_common.py",
+    "source_sha256": "1d38b971279beefdc2fb62d95d9065ed77f69b9842869aaf4c4f67ca4c58be62",
+    "collected_sha256": "c1e45700dd7d40eb6774a9f0854622f0cd110b734137434abc8210524f931e2a",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_cspbbr3/plot_species_orbital_d_heatmaps.py",
+    "destination": "visualization/cspbbr3/plot_species_orbital_d_heatmaps.py",
+    "source_sha256": "00cb40653a820442a01c803805e9a2ba0dc000493c64bc0c787d4feabf297ef0",
+    "collected_sha256": "00cb40653a820442a01c803805e9a2ba0dc000493c64bc0c787d4feabf297ef0",
+    "adapted_from_source": false
+  },
+  {
+    "source": "visualization_cspbbr3/plot_g2_path_temperature_comparison.py",
+    "destination": "visualization/cspbbr3/plot_g2_path_temperature_comparison.py",
+    "source_sha256": "6e5b602382835eaebb37d60709e030c9e67d5912c48b97f8180a616e8f2ce887",
+    "collected_sha256": "ed4ff9ddaf0b0f590bb943b4bf59d7f36458ba40a1243ecbe32299cce9e571cd",
+    "adapted_from_source": true
+  },
+  {
+    "source": "visualization_cspbbr3/generate_all_heatmaps.py",
+    "destination": "visualization/cspbbr3/generate_all_heatmaps.py",
+    "source_sha256": "86bf561ca06b61e664aaebacab0705c827f2119494b23d2ae1e9d148cdad9863",
+    "collected_sha256": "86bf561ca06b61e664aaebacab0705c827f2119494b23d2ae1e9d148cdad9863",
+    "adapted_from_source": false
+  },
+  {
+    "source": "reference_data/gaas_g2_sum_all_phonon_modes.csv",
+    "destination": "reference_data/PERTURBO/gaas_g2_sum_all_phonon_modes.csv",
+    "source_sha256": "e7cc059075a555213adc9183d20f365d09f9eba78b0f62d2935a1d973302f3ff",
+    "collected_sha256": "e7cc059075a555213adc9183d20f365d09f9eba78b0f62d2935a1d973302f3ff",
+    "adapted_from_source": false
+  }
+]

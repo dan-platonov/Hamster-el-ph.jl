@@ -1,0 +1,61 @@
+# Hamster model for CsPbBr3: TB + ML + SOC + Wolf onsite corrections, fitted on 2x2x2 MD structures
+# (chain CsPbBr3_Wolf_trainsize_gradient, 2026-10-19). Predicts Hamiltonians, eigenvalues and DOS of CsPbBr3 structures
+# of any cell size. Settings marked "model" belong to the fit: keep them, the parameters were fitted with them.
+# Optional settings (MD trajectories, large cells, DOS, GPU) are listed in README.md.
+
+begin Options
+    poscar = SC_POSCAR
+    init_params = params.dat      # model: TB, SOC and Ewald parameters
+    rcut = 5.5                    # model: TB cutoff (Å)
+    load_rllm = true              # model: distance dependence of the TB overlaps from rllm.dat
+    rllm_file = rllm.dat
+    soc = true                    # model: spin-orbit coupling
+    sp_mode = true                # sparse Hamiltonians (required for large cells, fine for small ones)
+    verbosity = 2
+    kpoints = gamma
+    write_hr = true
+    write_hk = false
+    skip_diag = true
+    ham_file = ham_hr.h5
+end
+
+begin Ewald
+    method = wolf                 # model: Wolf electrostatics
+    rcut = 17.8                   # model: range (Å) = 1.5 x the 2x2x2 training cell (11.874 Å)
+    alpha = 0.168                 # model: screening (1/Å) = 2 / 11.874 Å
+    init_params = params.dat      # model: coupling per species, the ewald_<element> lines of params.dat
+end
+
+begin ML
+    init_params = ml_params.dat   # model: data points and weights of the ML correction
+    apply_orthogonality = true    # model
+    sim_params = 0.1              # model: width of the similarity kernel
+end
+
+# model: orbitals, TB exponents (alpha) and effective charges (qeff) of the elements
+begin atom Cs
+    alpha = 38.6
+    orbitals = s
+    qeff = 1.02
+end
+
+begin atom Pb
+    alpha = 37
+    orbitals = s px py pz
+    qeff = 1.248
+end
+
+begin atom Br
+    alpha = 14.3
+    orbitals = px py pz
+    qeff = -0.756
+end
+
+# Trajectory selection; the parallel driver replaces this with each exact chunk.
+begin Supercell
+    xdatcar = SC_XDATCAR
+    poscar = SC_POSCAR
+    Nconf = 14502
+    Nconf_min = 500
+    Nconf_max = 15001
+end

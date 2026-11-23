@@ -1,0 +1,55 @@
+begin Options
+    rcut = 7
+
+    # Tight-binding model and radial-integral lookup table
+    load_rllm = true
+    rllm_file = rllm.dat
+    init_params = params.dat
+
+    # Reference structure
+    poscar = SC_POSCAR
+
+    verbosity = 2
+    sp_mode = true
+
+    # Keep this initially; see note below
+    kpoints = EIGENVAL
+
+    # Save real-space Hamiltonians
+    write_hk = false
+    write_hr = true
+    skip_diag = true
+    ham_file = ham_hr.h5
+end
+
+begin ML
+    ncluster = 15
+    npoints = 200
+    init_params = ml_params.dat
+end
+
+
+begin Supercell
+    Nconf = 50
+    Nconf_min = 4000
+    Nconf_max = 5000
+
+    xdatcar = SC_XDATCAR
+    poscar = SC_POSCAR
+    #config_inds = 4000 4001 4002#config_inds.dat
+end
+
+
+begin atom Ga
+    n = 3
+    alpha = 9
+    orbitals = sp3dr2 sp3dr2 sp3dr2 sp3dr2
+end
+
+
+begin atom As
+    n = 3
+    alpha = 13
+    orbitals = sp3dr2 sp3dr2 sp3dr2 sp3dr2
+    nnaxes = true
+end

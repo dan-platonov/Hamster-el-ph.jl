@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+task_bin_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+task_project=${EPH_JULIA_PROJECT:-${HAMSTER_PROJECT:-$task_bin_dir/..}}
+exec julia --startup-file=no --project="$task_project" "$task_bin_dir/mpi_launch.jl" "$@"
